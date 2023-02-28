@@ -1,0 +1,80 @@
+
+<div class="r-stack">
+    <img class="fragment visible" src="./images/ziel.png"  height="300" >
+    <img class="fragment" src="./images/ziel_management_selected.png"  height="300" >
+    <img class="fragment" src="./images/ziel_konfiguration_selected.png"  height="300" >
+    <img class="fragment" src="./images/ziel_monitoring_selected.png"  height="300" >
+</div>
+
+<section data-markdown>
+										<textarea data-template>
+												{
+													key: string,
+													hostname: string,
+													model: string,
+													version: string,
+													secret: string,
+													running_config: List[string],
+													serial: document,
+													telnet: document,
+													ssh: document,
+													interfaces: document,
+													ipv4_route: document
+												}
+										</textarea>
+									</section>
+
+
+                                    <div style="display: flex; flex-direction: row;">
+							<div style="border: 1px solid white; flex: 1">
+								
+									<p class="fragment fade-in highlight-red backend-moduls-table-title" >API</p>
+								
+								<p class="backend-moduls-table-content">API-Schnittstelle</p>
+							</div>
+							<div style="border: 1px solid white; flex: 1">
+								<p class="backend-moduls-table-title">Core</p>
+								<p class="backend-moduls-table-content">Anwendungslogik</p>
+							</div>
+							<div style="border: 1px solid white; flex: 1">
+								<p class="backend-moduls-table-title">TEXT</p>
+								<p class="backend-moduls-table-content">API-Schnittstelle</p>
+							</div>
+						</div>
+						<div style="display: flex; flex-direction: row;">
+							<div style="border: 1px solid white; flex: 1">
+								<p class="backend-moduls-table-title">TEXT</p>
+								<p class="backend-moduls-table-content">API-Schnittstelle</p>
+							</div>
+							<div style="border: 1px solid white; flex: 1">
+								<p class="backend-moduls-table-title">TEXT</p>
+								<p class="backend-moduls-table-content">API-Schnittstelle</p>
+							</div>
+							<div style="border: 1px solid white; flex: 1">
+								<p class="backend-moduls-table-title">TEXT</p>
+								<p class="backend-moduls-table-content">API-Schnittstelle</p>
+							</div>
+						</div>
+
+
+
+                        <section>
+					<h1>Erweiterung des Befehlssatzes</h1>
+					<pre>
+						<code data-line-numbers="1|2" data-ln-start-from="1" class="language-python">
+def function():
+	pass
+def fun2():
+	string = "Hello"
+	if (string == "Python"):
+		print("Python")
+		d = {
+			1: "ONE"
+		}
+	return string			
+						</code>
+					</pre>
+				</section>
+				<section>
+					<h1>TEST</h1>
+				</section>
