@@ -33,7 +33,8 @@
 			<section style="text-align: center;">
 				<h1 style="color: blueviolet; font-family: Roboto; font-size: 50pt;">Network Manager</h1>
 				<p style="font-family: Roboto;">Anwendung zur Fernwartung von Netzwerk</p>
-				<small style="font-family: Roboto; font-size: 14pt;">Referent: Onur-Can Yaman</small>
+				<small style="font-family: Roboto; font-size: 14pt;">Referent: Onur-Can Yaman</small><br/>
+				<small style="font-family: Roboto; font-size: 14pt;">Betreuer: Prof. Dr-Ing., Dipl.-Ing. Lutz Grünwoldt und Matthäus Engel, MSc </small>
 			</section>
 
 			<section id="ziel">
@@ -43,20 +44,44 @@
 
 				<div class="r-stack">
 					<div>
-						<p id="verwaltung" class="fragment fade-in-then-out red-selector-list" data-fragment-index="0">-
-							Verwaltung -</p>
-						<p id="konfigurierung" class="fragment fade-in-then-out red-selector-list"
-							data-fragment-index="1">- Konfigurierung -</p>
-						<p id="ueberwachung" class="fragment fade-in-then-out red-selector-list"
-							data-fragment-index="2">- Überwachung -</p>
+						<p id="verwaltung" class="fragment fade-in" data-fragment-index="0">Verwaltung,</p>
+						<p id="konfigurierung" class="fragment fade-in" data-fragment-index="1">Konfigurierung,</p>
+						<p id="ueberwachung" class="fragment fade-in" data-fragment-index="2">Überwachung</p>
 					</div>
-					<div>
-						<p class="fragment fade-in-then-out" data-fragment-index="3">Verwaltung</p>
-						<p class="fragment fade-in-then-out" data-fragment-index="3">Konfigurierung</p>
-						<p class="fragment fade-in-then-out" data-fragment-index="3">Überwachung</p>
-					</div>
+					
 				</div>
 
+				<p class="fragment fade-in" data-fragment-index="3">von Netzwerken</p>
+
+			</section>
+
+			<section id="frontend">
+				<section id="frontend-title-page">
+					<h1 style="color: blueviolet;">Frontend</h1>
+				</section>
+				
+				<section id="frontend-overview">
+					<h2 style="color: blueviolet">Überblick</h2>
+					<img src="./images/layout_full_overview.png" style="width: 70%"/>
+					<table>
+						<thead>
+							<tr>
+								<td style="width: 25%; text-align: center; color: red">1</td>
+								<td style="width: 25%; text-align: center; color: #002cff">2</td>
+								<td style="width: 25%; text-align: center; color: #33ff00">3</td>
+								<td style="width: 25%; text-align: center; color: #f804fc">4</td>
+							</tr>
+						</thead>
+						<tbody>
+							<tr>
+								<td style="text-align: center; color: red">Navigationsmenü</td>
+								<td style="text-align: center; color: #002cff">Hauptfenster</td>
+								<td style="text-align: center; color: #33ff00">Netzwerkgeräte</td>
+								<td style="text-align: center; color: #f804fc">Konfigurationsfenster</td>
+							</tr>
+						</tbody>
+					</table>
+				</section>
 			</section>
 
 			<section id="backend">
@@ -64,23 +89,15 @@
 					<h1 class="fragment fade-out" data-fragment-index="0" style="color: blueviolet;">Backend</h1>
 				</section>
 				<section>
-					<h2><u>MongoDB</u></h2>
+					<h2 style="color: blueviolet;"><u>MongoDB</u></h2>
 					<div class="r-stack">
 						<div>
-							<p class="fragment fade-in-then-out red-selector-list" data-fragment-index="0">- Einfache
-								Anbingung an FastAPI -</p>
-							<p class="fragment fade-in-then-out red-selector-list" data-fragment-index="1">-
+							<p class="fragment fade-in " data-fragment-index="0">- Einfache
+								Anbindung an FastAPI -</p>
+							<p class="fragment fade-in " data-fragment-index="1">-
 								Verschachtelung von Documents -</p>
-							<p class="fragment fade-in-then-out red-selector-list" data-fragment-index="2">-
+							<p class="fragment fade-in " data-fragment-index="2">-
 								Flexibilität des Datenbankschemas -</p>
-						</div>
-						<div>
-							<p class="fragment fade-in-then-out" data-fragment-index="3">Einfache Anbingung an FastAPI
-							</p>
-							<p class="fragment fade-in-then-out" data-fragment-index="3">Verschachtelung von Documents
-							</p>
-							<p class="fragment fade-in-then-out" data-fragment-index="3">Flexibilität des
-								Datenbankschemas</p>
 						</div>
 					</div>
 					<aside class="notes">
@@ -91,7 +108,7 @@
 				</section>
 
 				<section>
-					<h2>Datenbankschema</h2>
+					<h2 style="color: blueviolet;">Datenbankschema</h2>
 					<p class="fragment fade-in" data-fragment-index="0">Collections</p>
 					<div class="fragment fade-in" data-fragment-index="1"
 						style="display: grid; grid-auto-flow: column;">
@@ -145,35 +162,35 @@
 
 
 				<section>
-					<h2>Modulstruktur</h2>
+					<h2 style="color: blueviolet;">Modulstruktur</h2>
 					<div class="r-stack">
 						<div class="fragment fade-out" data-fragment-index="0">
 							<table style="border: 1px solid white;">
 								<tbody>
 									<tr>
-										<td style="text-align: center;">
+										<td style="text-align: center; border: 1px solid white;">
 											API<br />
 											API-Schnittstelle
 										</td>
-										<td style="text-align: center;">
+										<td style="text-align: center; border: 1px solid white;" >
 											Core<br />
 											Anwendungslogik
 										</td>
-										<td style="text-align: center;">
+										<td style="text-align: center; border: 1px solid white;">
 											CRUD<br />
 											Datenbankinteraktion
 										</td>
 									</tr>
 									<tr>
-										<td style="text-align: center;">
+										<td style="text-align: center; border: 1px solid white;">
 											Database<br />
 											Datenbankmanagement
 										</td>
-										<td style="text-align: center;">
+										<td style="text-align: center; border: 1px solid white;">
 											Models<br />
 											Netzwerkgeräte
 										</td>
-										<td style="text-align: center;">
+										<td style="text-align: center; border: 1px solid white;">
 											Schemes<br />
 											FastAPI-Schemata
 										</td>
@@ -185,29 +202,29 @@
 							<table style="border: 1px solid white;">
 								<tbody>
 									<tr>
-										<td style="text-align: center;">
+										<td style="text-align: center; border: 1px solid white;">
 											<span style="color: crimson">API</span><br />
 											API-Schnittstelle
 										</td>
-										<td style="text-align: center;">
+										<td style="text-align: center; border: 1px solid white;">
 											Core<br />
 											Anwendungslogik
 										</td>
-										<td style="text-align: center;">
+										<td style="text-align: center; border: 1px solid white;">
 											CRUD<br />
 											Datenbankinteraktion
 										</td>
 									</tr>
 									<tr>
-										<td style="text-align: center;">
+										<td style="text-align: center; border: 1px solid white;">
 											Database<br />
 											Datenbankmanagement
 										</td>
-										<td style="text-align: center;">
+										<td style="text-align: center; border: 1px solid white;">
 											Models<br />
 											Netzwerkgeräte
 										</td>
-										<td style="text-align: center;">
+										<td style="text-align: center; border: 1px solid white;">
 											Schemes<br />
 											FastAPI-Schemata
 										</td>
@@ -219,29 +236,29 @@
 							<table style="border: 1px solid white;">
 								<tbody>
 									<tr>
-										<td style="text-align: center;">
+										<td style="text-align: center; border: 1px solid white;">
 											API<br />
 											API-Schnittstelle
 										</td>
-										<td style="text-align: center;">
+										<td style="text-align: center; border: 1px solid white;">
 											<span style="color: crimson">Core</span><br />
 											Anwendungslogik
 										</td>
-										<td style="text-align: center;">
+										<td style="text-align: center; border: 1px solid white;">
 											CRUD<br />
 											Datenbankinteraktion
 										</td>
 									</tr>
 									<tr>
-										<td style="text-align: center;">
+										<td style="text-align: center; border: 1px solid white;">
 											Database<br />
 											Datenbankmanagement
 										</td>
-										<td style="text-align: center;">
+										<td style="text-align: center; border: 1px solid white;">
 											Models<br />
 											Netzwerkgeräte
 										</td>
-										<td style="text-align: center;">
+										<td style="text-align: center; border: 1px solid white;">
 											Schemes<br />
 											FastAPI-Schemata
 										</td>
@@ -253,29 +270,29 @@
 							<table style="border: 1px solid white;">
 								<tbody>
 									<tr>
-										<td style="text-align: center;">
+										<td style="text-align: center; border: 1px solid white;">
 											API<br />
 											API-Schnittstelle
 										</td>
-										<td style="text-align: center;">
+										<td style="text-align: center; border: 1px solid white;">
 											Core</span><br />
 											Anwendungslogik
 										</td>
-										<td style="text-align: center;">
+										<td style="text-align: center; border: 1px solid white;">
 											<span style="color: crimson">CRUD</span><br />
 											Datenbankinteraktion
 										</td>
 									</tr>
 									<tr>
-										<td style="text-align: center;">
+										<td style="text-align: center; border: 1px solid white;">
 											Database<br />
 											Datenbankmanagement
 										</td>
-										<td style="text-align: center;">
+										<td style="text-align: center; border: 1px solid white;">
 											Models<br />
 											Netzwerkgeräte
 										</td>
-										<td style="text-align: center;">
+										<td style="text-align: center; border: 1px solid white;">
 											Schemes<br />
 											FastAPI-Schemata
 										</td>
@@ -287,29 +304,29 @@
 							<table style="border: 1px solid white;">
 								<tbody>
 									<tr>
-										<td style="text-align: center;">
+										<td style="text-align: center; border: 1px solid white;">
 											API<br />
 											API-Schnittstelle
 										</td>
-										<td style="text-align: center;">
+										<td style="text-align: center; border: 1px solid white;">
 											Core</span><br />
 											Anwendungslogik
 										</td>
-										<td style="text-align: center;">
+										<td style="text-align: center; border: 1px solid white;">
 											CRUD<br />
 											Datenbankinteraktion
 										</td>
 									</tr>
 									<tr>
-										<td style="text-align: center;">
+										<td style="text-align: center; border: 1px solid white;">
 											<span style="color: crimson">Database</span><br />
 											Datenbankmanagement
 										</td>
-										<td style="text-align: center;">
+										<td style="text-align: center; border: 1px solid white;">
 											Models<br />
 											Netzwerkgeräte
 										</td>
-										<td style="text-align: center;">
+										<td style="text-align: center; border: 1px solid white;">
 											Schemes<br />
 											FastAPI-Schemata
 										</td>
@@ -321,29 +338,29 @@
 							<table style="border: 1px solid white;">
 								<tbody>
 									<tr>
-										<td style="text-align: center;">
+										<td style="text-align: center; border: 1px solid white;">
 											API<br />
 											API-Schnittstelle
 										</td>
-										<td style="text-align: center;">
+										<td style="text-align: center; border: 1px solid white;">
 											Core</span><br />
 											Anwendungslogik
 										</td>
-										<td style="text-align: center;">
+										<td style="text-align: center; border: 1px solid white;">
 											CRUD<br />
 											Datenbankinteraktion
 										</td>
 									</tr>
 									<tr>
-										<td style="text-align: center;">
+										<td style="text-align: center; border: 1px solid white;">
 											Database<br />
 											Datenbankmanagement
 										</td>
-										<td style="text-align: center;">
+										<td style="text-align: center; border: 1px solid white;">
 											<span style="color: crimson">Models</span><br />
 											Netzwerkgeräte
 										</td>
-										<td style="text-align: center;">
+										<td style="text-align: center; border: 1px solid white;">
 											Schemes<br />
 											FastAPI-Schemata
 										</td>
@@ -355,29 +372,29 @@
 							<table style="border: 1px solid white;">
 								<tbody>
 									<tr>
-										<td style="text-align: center;">
+										<td style="text-align: center; border: 1px solid white;">
 											API<br />
 											API-Schnittstelle
 										</td>
-										<td style="text-align: center;">
+										<td style="text-align: center; border: 1px solid white;">
 											Core</span><br />
 											Anwendungslogik
 										</td>
-										<td style="text-align: center;">
+										<td style="text-align: center; border: 1px solid white;">
 											CRUD<br />
 											Datenbankinteraktion
 										</td>
 									</tr>
 									<tr>
-										<td style="text-align: center;">
+										<td style="text-align: center; border: 1px solid white;">
 											Database<br />
 											Datenbankmanagement
 										</td>
-										<td style="text-align: center;">
+										<td style="text-align: center; border: 1px solid white;">
 											Models<br />
 											Netzwerkgeräte
 										</td>
-										<td style="text-align: center;">
+										<td style="text-align: center; border: 1px solid white;">
 											<span style="color: crimson">Schemes</span><br />
 											FastAPI-Schemata
 										</td>
@@ -389,27 +406,27 @@
 				</section>
 
 				<section>
-					<h2>Modulstruktur</h2>
+					<h2 style="color: blueviolet;">API-Struktur</h2>
 					<div class="r-stack">
 						<div class="fragment fade-out" data-fragment-index="0">
 							<table style="border: 1px solid white;">
 								<tbody>
 									<tr>
-										<td style="text-align: center;">
+										<td style="width: 50%; text-align: center; border: 1px solid white;">
 											ABOUT<br />
 											Informationenen bzgl. Gerätehersteller, Gerätetypen und Modelle
 										</td>
-										<td style="text-align: center;">
+										<td style=" width: 50%;text-align: center; border: 1px solid white;">
 											COMMAND<br />
 											Ausführung der Befehle auf den Netzwerkgeräten
 										</td>
 									</tr>
 									<tr>
-										<td style="text-align: center;">
+										<td style="width: 50%; text-align: center; border: 1px solid white;">
 											DEVICE<br />
 											Ermöglicht die Geräteverwaltung
 										</td>
-										<td style="text-align: center;">
+										<td style="width: 50%; text-align: center; border: 1px solid white;">
 											CONNECT<br />
 											Verbindungsverwaltung zu Netzwerkgeräten
 										</td>
@@ -421,22 +438,22 @@
 						<div class="fragment fade-in-then-out" data-fragment-index="0">
 							<table style="border: 1px solid white;">
 								<tbody>
-									<tr>
-										<td style="text-align: center;">
+									<tr style="border: 1px solid white;">
+										<td style="width: 50%; text-align: center; border: 1px solid white;">
 											<span style="color: crimson">ABOUT</span><br />
 											Informationenen bzgl. Gerätehersteller, Gerätetypen und Modelle
 										</td>
-										<td style="text-align: center;">
+										<td style="width: 50%; text-align: center; border: 1px solid white;">
 											COMMAND<br />
 											Ausführung der Befehle auf den Netzwerkgeräten
 										</td>
 									</tr>
-									<tr>
-										<td style="text-align: center;">
+									<tr style="border: 1px solid white;">
+										<td style=" width: 50%;text-align: center; border: 1px solid white;">
 											DEVICE<br/>
 											Ermöglicht die Geräteverwaltung
 										</td>
-										<td style="text-align: center;">
+										<td style="width: 50%; text-align: center; border: 1px solid white;">
 											CONNECT<br/>
 											Verbindungsverwaltung zu Netzwerkgeräten
 										</td>
@@ -449,21 +466,21 @@
 							<table style="border: 1px solid white;">
 								<tbody>
 									<tr>
-										<td style="text-align: center;">
+										<td style="width: 50%; text-align: center; border: 1px solid white;">
 											ABOUT<br/>
 											Informationenen bzgl. Gerätehersteller, Gerätetypen und Modelle
 										</td>
-										<td style="text-align: center;">
+										<td style="width: 50%; text-align: center; border: 1px solid white;">
 											<span style="color: crimson">COMMAND</span><br />
 											Ausführung der Befehle auf den Netzwerkgeräten
 										</td>
 									</tr>
 									<tr>
-										<td style="text-align: center;">
+										<td style="width: 50%; text-align: center; border: 1px solid white;">
 											DEVICE<br/>
 											Ermöglicht die Geräteverwaltung
 										</td>
-										<td style="text-align: center;">
+										<td style="width: 50%; text-align: center; border: 1px solid white;">
 											CONNECT<br/>
 											Verbindungsverwaltung zu Netzwerkgeräten
 										</td>
@@ -476,21 +493,21 @@
 							<table style="border: 1px solid white;">
 								<tbody>
 									<tr>
-										<td style="text-align: center;">
+										<td style="width: 50%; text-align: center; border: 1px solid white;">
 											ABOUT<br/>
 											Informationenen bzgl. Gerätehersteller, Gerätetypen und Modelle
 										</td>
-										<td style="text-align: center;">
+										<td style="width: 50%; text-align: center; border: 1px solid white;">
 											COMMAND<br/>
 											Ausführung der Befehle auf den Netzwerkgeräten
 										</td>
 									</tr>
 									<tr>
-										<td style="text-align: center;">
+										<td style="width: 50%; text-align: center; border: 1px solid white;">
 											<span style="color: crimson">DEVICE</span><br />
 											Ermöglicht die Geräteverwaltung
 										</td>
-										<td style="text-align: center;">
+										<td style="width: 50%; text-align: center; border: 1px solid white;">
 											CONNECT<br/>
 											Verbindungsverwaltung zu Netzwerkgeräten
 										</td>
@@ -502,22 +519,22 @@
 						<div class="fragment fade-in-then-out" data-fragment-index="3">
 							<table style="border: 1px solid white;">
 								<tbody>
-									<tr>
-										<td style="text-align: center;">
+									<tr style="border: 1px solid white;">
+										<td style="width: 50%; text-align: center; border: 1px solid white;">
 											ABOUT<br/>
 											Informationenen bzgl. Gerätehersteller, Gerätetypen und Modelle
 										</td>
-										<td style="text-align: center;">
+										<td style="width: 50%; text-align: center; border: 1px solid white;">
 											COMMAND<br/>
 											Ausführung der Befehle auf den Netzwerkgeräten
 										</td>
 									</tr>
-									<tr>
-										<td style="text-align: center;">
+									<tr style="border: 1px solid white;">
+										<td style="width: 50%; text-align: center; border: 1px solid white;">
 											DEVICE<br/>
 											Ermöglicht die Geräteverwaltung
 										</td>
-										<td style="text-align: center;">
+										<td style="width: 50%; text-align: center; border: 1px solid white;">
 											<span style="color: crimson">CONNECT</span><br/>
 											Verbindungsverwaltung zu Netzwerkgeräten
 										</td>
@@ -530,7 +547,7 @@
 				</section>
 
 				<section id="models">
-					<h2>Models</h2>
+					<h2 style="color: blueviolet;">Models</h2>
 					<div style="display: flex; flex-direction: row;">
 						<div style="flex: 1">
 							<p style="font-size: .85em;">Vorlage zur Implementierung eines neuen Gerätemodells</p>
@@ -569,51 +586,60 @@
 				</section>
 				
 				<section>
-					<h1>Neues Modell anlegen</h1>
-					<div style="display: flex; flex-direction: row; align-items: center; justify-content: center;">
-						<div class="r-stack" style="flex: 1">
-							<img class="fragment fade-in" data-fragment-index="0" src="./images/neues_model_ordner.png"/> 
-							<img class="fragment fade-in" data-fragment-index="1" src="./images/neues_model_ordner_router.png"/> 
-							<img class="fragment fade-in" data-fragment-index="2" src="./images/neues_model_ordner_router_new_model.png"/> 
-						</div>
-						<div style="flex: .5">
-							<img class="fragment fade-in" data-fragment-index="3" src="./images/arrow.png" width="150px"/>
-						</div>
-						<div style="flex: 1">
-							<img class="fragment fade-in" data-fragment-index="4" src="./images/new_class_model.png"/> 
-						</div>
-					</div>
-					<div style="display: flex; flex-direction: row; align-items: center; justify-content: center;">
-						<div style="flex: 1">
-							<img class="fragment fade-in" data-fragment-index="5" src="./images/neues_model_ordner_init.png"/> 
-						</div>
-						<div style="flex: .5">
-							<img class="fragment fade-in" data-fragment-index="6" src="./images/arrow.png" width="150px"/>
-						</div>
-						<div style="flex: 1">
-							<img class="fragment fade-in" data-fragment-index="7" src="./images/new_model_init.png"/> 
+					<h2 style="color: blueviolet;">Neues Modell anlegen</h2>
+					<div style="display: flex; flex-direction: column; align-items: center; justify-content: center;">
+						<h3 style="flex: 1;" class="fragment fade-in" data-fragment-index="1">Klasse erstellen</h3>
+						<div style="width: 100%; display: flex; flex-direction: row; align-items: center; justify-content: center;">
+							<div class="r-stack" style="flex: 1">
+								<img class="fragment fade-in" data-fragment-index="2" src="./images/neues_model_ordner.png"/> 
+								<img class="fragment fade-in" data-fragment-index="3" src="./images/neues_model_ordner_router.png"/> 
+								<img class="fragment fade-in" data-fragment-index="4" src="./images/neues_model_ordner_router_new_model.png"/> 
+							</div>
+							<div style="flex: .5">
+								<img class="fragment fade-in" data-fragment-index="5" src="./images/arrow.png" width="150px"/>
+							</div>
+							<div style="flex: 1">
+								<img class="fragment fade-in" data-fragment-index="6" src="./images/new_class_model.png"/> 
+							</div>
 						</div>
 					</div>
+					<div style="display: flex; flex-direction: column; align-items: center; justify-content: center;">
+						<h3 style="flex: 1;" class="fragment fade-in" data-fragment-index="7">Klasse bekanntmachen</h3>
+						<div style="width: 100%; display: flex; flex-direction: row; align-items: center; justify-content: center;">
+							<div style="width: 100%; display: flex; flex-direction: row; align-items: center; justify-content: center;">
+								<div style="flex: 1">
+									<img class="fragment fade-in" data-fragment-index="8" src="./images/neues_model_ordner_init.png"/> 
+								</div>
+								<div style="flex: .5">
+									<img class="fragment fade-in" data-fragment-index="9" src="./images/arrow.png" width="150px"/>
+								</div>
+								<div style="flex: 1">
+									<img class="fragment fade-in" data-fragment-index="10" src="./images/new_model_init.png"/> 
+								</div>
+							</div>
+						</div>
+					</div>
+					
 				</section>
 
 				<section>
-					<h2>Befehlssatz erweitern</h2>
+					<h2 style="color: blueviolet;">Befehlssatz erweitern</h2>
 					<div style="display: flex; flex-direction: row;">
-						<div style="flex: 1">
+						<div class="fragment fade-in" data-fragment-index="0" style="flex: 1">
 							<p style="font-size: .85em;">Show-Befehl</p>
 							<img src="./images/new_show_command.png" />
 						</div>
-						<div style="flex: 1">
+						<div class="fragment fade-in" data-fragment-index="1" style="flex: 1">
 							<p style="font-size: .85em;">Parser</p>
 							<img src="./images/new_show_command_parser.png" />
 						</div>
-						<div style="flex: 1">
+						<div class="fragment fade-in" data-fragment-index="2" style="flex: 1">
 							<p style="font-size: .85em;">Configure-Befehl</p>
 							<img src="./images/new_configure_command.png" />
 						</div>
 					</div>
-				
-					<div>
+
+					<div class="fragment fade-in" data-fragment-index="3">
 						<p style="font-size: .85em;">Mapping</p>
 						<img  src="./images/new_cmd_map.png" />
 					</div>
@@ -621,7 +647,7 @@
 			</section>
 
 			<section>
-				<h2>RegEx zum Parsen der Routingtabelle</h2>
+				<h2 style="color: blueviolet;">RegEx zum Parsen der Routingtabelle</h2>
 				<section>
 					<div style="display: flex; flex-direction: column; text-align: center; align-items: center;">
 						<img class="fragment fade-in" data-fragment-index="0" style="flex: 1" src="./images/routingtable.png"/>
@@ -716,33 +742,10 @@
 				</section>
 			</section>
 
+			
+
 			<section>
-				<section>
-					<h1>Frontend</h1>
-				</section>
-				
-				<section>
-					<h2>Überblick</h2>
-					<img src="./images/layout_full_overview.png" style="width: 70%"/>
-					<table>
-						<thead>
-							<tr>
-								<td style="width: 25%; text-align: center; color: red">1</td>
-								<td style="width: 25%; text-align: center; color: #002cff">2</td>
-								<td style="width: 25%; text-align: center; color: #33ff00">3</td>
-								<td style="width: 25%; text-align: center; color: #f804fc">4</td>
-							</tr>
-						</thead>
-						<tbody>
-							<tr>
-								<td style="text-align: center;">Navigationsmenü</td>
-								<td style="text-align: center;">Hauptfenster</td>
-								<td style="text-align: center;">Netzwerkgeräte</td>
-								<td style="text-align: center;">Konfigurationsfenster</td>
-							</tr>
-						</tbody>
-					</table>
-				</section>
+				<h1 style="color: blueviolet;">Demo</h1>
 			</section>
 
 		</div>
@@ -795,6 +798,7 @@
 			width: '100%',
 			height: '100%',
 			navigationMode: "linear",
+			slideNumber: 'h/v',
 
 			// Learn about plugins: https://revealjs.com/plugins/
 			plugins: [RevealMarkdown, RevealHighlight, RevealNotes]
@@ -807,6 +811,11 @@
 				console.log(event.fragment.className);
 			}
 
+		});
+
+		Reveal.addEventListener('slidechanged', (event) => {
+			const isFirst = event.indexh === 0;
+			Reveal.configure({ slideNumber: !isFirst });
 		});
 
 		RegexColorizer.colorizeAll();
